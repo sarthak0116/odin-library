@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/55b442ac64.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Library</h1>
+      <button id="btn-new-book">New Book</button>
+    </header>
+    <div class="divider"></div>
+    <p class="count" id="count">— 0 books</p>
+    <div id="shelf"></div>
+
+    <dialog id="book-data-dialogue">
+      <div class="content">
+        <div class="dialog-header">
+          <p>New book</p>
+          <button id="cancel">✕</button>
+        </div>
+        <form>
+          <p>Enter the book details</p>
+          <input type="text" id="title" placeholder="title" required />
+          <input type="text" id="author" placeholder="author" required />
+          <input type="text" id="pages" placeholder="no. of pages" required />
+          <div class="checkbox-row">
+            <input type="checkbox" id="read" />
+            <label for="read">Already read?</label>
+          </div>
+
+          <button type="submit" id="submit">Add Book</button>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
